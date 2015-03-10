@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="description" content="Anabasis – The epic tale of the Ten Thousand cells">
+<meta name="keywords" content="anabasis, webapp, game, guess, 10000, draw">
+<meta name="author" content="Alexis Huet">
+<title>Anabasis – The epic tale of the Ten Thousand cells</title>
+<link href="static/img/favicon.ico" rel="shortcut icon"></link>
+<link href="static/style.css" rel="stylesheet" type="text/css">
+<link href="static/style10.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <br>
+  <div class="title"><b>Anabasis</b></div>
+  <div class="subtitle">The epic tales of the <b>Ten Thousand</b> cells</div>  
+
+  <br>
+  <div id="container">
+    <a href = "index.html"><div class="small_button noselect" id="left" onmouseover="this.style.cursor='pointer';this.style.background='hsl(200, 40%, 90%)';this.style.color='hsl(200, 17%, 48%)';" onmouseout="this.style.background='hsl(200, 17%, 48%)';this.style.color='hsl(200, 37%, 96%)';">game</div></a>&nbsp;
+    <div class="small_button pushed noselect" onmouseover="this.style.cursor='default';" id="center">howto</div>&nbsp;
+    <a href = "draws.html"><div class="small_button noselect" onmouseover="this.style.cursor='pointer';this.style.background='hsl(200, 40%, 90%)';this.style.color='hsl(200, 17%, 48%)';" onmouseout="this.style.background='hsl(200, 17%, 48%)';this.style.color='hsl(200, 37%, 96%)';"
+ id="right">draws</div></a>
+  </div>
+  <br>
+
+  <p>
+    <p>
+      <b>Lobby.</b> 
+      First, you stand in the lobby, a square containing 10×10 rooms with different shades of blue. In the lobby, click on a room to enter it.</p>
+    <p><b>Rooms.</b> 
+      Each room contains 10×10 cells. Each cell is dark or light.
+      When clicking on a <span class="cursor-dark">dark cell</span>, it transforms to a <span class="cursor-light">light cell</span>. They is no way to do the opposite.
+      Click on <span class="cursor-circle">the circle</span> to return to the lobby.</p>
+    <p><b>Minimap.</b> 
+      Standing in a room, you can see your global position at the bottom left square. 
+      Furthermore, you can go to a neighbour room without going back to the lobby, by clicking the arrows on the control pad.</p>
+    <p><b>Artistic aim.</b> 
+      The main goal is to draw awesome monochrome pixel pictures. 
+      Express yourself and draw letters, signs or geometric forms... 
+      Play alone or with friends: every player contributes at the same time on the same drawing!</p>
+    <p><b>Challenging aim.</b> 
+      The secondary goal, more challenging, is to find one special cell among the Ten Thousand. 
+      This special cell ends the game and makes you choose the name of the whole draw!</p>
+    <p><b>Draws section.</b>
+      The finished artworks are therefore available in the draws section. There, admire the chefs-d’œuvre by clicking on arrows, and click on the circle to come back to the most recent picture.</p>
+  </p>
+
+<br>
+  <div class="sharing">
+    Share this
+    <span id="facebook">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0&appId=372067933002073";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="https://www.facebook.com/anabasis.game" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+    </span>
+
+    <span id="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://anabasis.herokuapp.com/" data-via="ahstat">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </span>
+  </div>
+
+
+  <div class="contact">
+    Contact: <a href="contact.html"">Alexis Huet</a>.
+  </div>
+
+  <div style="display:none;"><img src="static/img/anabasis_image1.png"></div>
+</body>
+</html>

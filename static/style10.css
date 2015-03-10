@@ -1,0 +1,28 @@
+td {
+  border: 1px dotted rgba(255,255,255,0);
+  padding: 30px;
+}
+
+#minimap-background {
+  position: relative;
+  left: 0px;
+  top: 19px;
+  z-index: 1;
+}
+
+#minimap-my_position {
+  position: relative;
+  left:-27px;
+  top: -136px;
+  z-index: 2;
+}
+
+#minimap_background_img {
+  width:62px; 
+  height:62px;
+}
+
+#minimap_position_img {
+  width:6px; 
+  height:6px;
+}

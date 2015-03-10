@@ -1,0 +1,181 @@
+body {
+  margin: 0 auto;
+  background: hsl(200, 50%, 96%);
+  color: hsl(200, 8%, 43%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px; 
+  width: 611px; /* 30*2 for each cell *10 = 600 + borders (1*11) = 611 */
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+
+.subtitle {
+  position: relative;
+  left:0px;
+  top: -15px;
+  text-align: center;
+}
+
+.table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+td:hover {
+  border: 1px solid #f25700;
+}
+
+td.arrows {
+  border: 0px;
+  padding: 0px;
+  line-height: 0px;
+}
+
+.cell {
+  background-color: hsl(200,100%,20%);
+}
+
+.cell_seen {
+  background-color: hsl(200,100%,80%);
+}
+
+.button {
+  margin-top: 30px;
+  background: hsl(200, 17%, 48%);
+  color: hsl(200, 37%, 96%);
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.small_button {
+  background: hsl(200, 17%, 48%);
+  color: hsl(200, 37%, 96%);
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pushed {
+  background: hsl(200, 40%, 90%);
+  color: hsl(200, 17%, 48%);
+}
+
+#container {
+    width:100%;
+    text-align:center;
+}
+
+#left {
+    margin-left: 40px;
+    display: inline-block;
+    margin:0 auto;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+}
+
+#right {
+    margin-right: 40px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.left {
+  float: left;
+  margin-left: 40px;
+}
+
+.right {
+  float: right;
+  margin-right: 40px;
+}
+
+.dashboard {
+  border: 1px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.size_draw10 {
+  width: 600px;
+}
+
+.size_draw26 {
+  width: 676px;
+}
+
+.title_draw {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  color: hsl(200, 8.2%, 43.1%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cursor-circle {
+  cursor: url('img/circle-blue-small.png'), pointer;
+  text-decoration: underline;
+}
+
+.cursor-dark {
+  cursor: url('img/dark_cell.png'), pointer;
+  text-decoration: underline;
+}
+
+.cursor-light {
+  cursor: url('img/light_cell.png'), pointer;
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.sharing {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; 
+}
+
+#twitter
+{
+position:relative;
+top:6px;
+left:20px;
+}
+
+#facebook
+{
+position:relative;
+top:0px;
+}

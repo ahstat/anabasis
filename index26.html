@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="description" content="Anabasis – The epic tale of the Ten Thousand cells">
+<meta name="keywords" content="anabasis, webapp, game, guess, 10000, draw">
+<meta name="author" content="Alexis Huet">
+<title>Anabasis – The epic tale of the Ten Thousand cells</title>
+<link href="static/img/favicon.ico" rel="shortcut icon"></link>
+<link href="static/style.css" rel="stylesheet" type="text/css">
+<link href="static/style26.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <br>
+  <div class="title"><b>Anabasis</b></div>
+  <div class="subtitle">The epic tales of the <b>Ten Thousands</b> cells</div>  
+
+  <br>
+  <div id="container">
+    <div class="small_button pushed noselect" onmouseover="this.style.cursor='default';" id="left">game</div>&nbsp;
+    <a href = "howto.html"><div class="small_button noselect" onmouseover="this.style.cursor='pointer';this.style.background='hsl(200, 40%, 90%)';this.style.color='hsl(200, 17%, 48%)';" onmouseout="this.style.background='hsl(200, 17%, 48%)';this.style.color='hsl(200, 37%, 96%)';"
+ id="center">howto</div></a>&nbsp;
+    <a href = "draws.html"><div class="small_button noselect" onmouseover="this.style.cursor='pointer';this.style.background='hsl(200, 40%, 90%)';this.style.color='hsl(200, 17%, 48%)';" onmouseout="this.style.background='hsl(200, 17%, 48%)';this.style.color='hsl(200, 37%, 96%)';"
+ id="right">draws</div></a>
+  </div>
+
+  <span onmouseover="this.style.cursor='pointer'";>
+    <table class="table"></table>
+  </span>
+
+  <div class="button left noselect" onmouseover="this.style.cursor='default'">
+    <div id="minimap-text">minimap</div>
+    <div id="minimap-background"><img src="static/img/background.png" id="minimap_background_img"></div>
+    <div id="minimap-my_position"><img src="static/img/position.png" id="minimap_position_img"></div>
+    <div id="minimap-text2">minimap</div>
+  </div>
+
+  <div id="nb_players" class="button right noselect" onmouseover="this.style.cursor='default'">nb_players</div>
+
+  <table class="noselect dashboard">
+    <tr>
+      <td class="arrows"></td>
+      <td class="arrows">
+        <span onmouseover="this.style.cursor='pointer'" onclick="draw_room(-10)";>
+          <img src="static/img/up.png" width = "48px">
+        </span>
+      </td>
+      <td class="arrows"></td>
+    </tr>
+    <tr>
+      <td class="arrows">
+        <span onmouseover="this.style.cursor='pointer'" onclick="draw_room(-1)";>
+          <img src="static/img/left.png" width = "48px">
+        </span>
+      </td>
+      <td class="arrows">
+        <span onmouseover="this.style.cursor='pointer'" onclick="lobby()";>
+          <img src="static/img/circle-blue.png" width = "48px">
+        </span>
+      </td>
+      <td class="arrows">
+        <span onmouseover="this.style.cursor='pointer'" onclick="draw_room(+1)";>
+          <img src="static/img/right.png" width = "48px">
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td class="arrows"></td>
+      <td class="arrows">
+        <span onmouseover="this.style.cursor='pointer'" onclick="draw_room(+10)";>
+          <img src="static/img/bottom.png" width = "48px">
+        </span>
+      </td>
+      <td class="arrows"></td>
+    </tr>
+  </table>
+
+<br>
+  <div class="sharing">
+    Share this
+    <span id="facebook">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0&appId=372067933002073";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="https://www.facebook.com/anabasis.game" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+    </span>
+
+    <span id="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://anabasis.herokuapp.com/" data-via="ahstat">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </span>
+  </div>
+
+  <div class="contact">
+    Contact: <a href="contact.html"">Alexis Huet</a>.
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>var side = 26 //side of the square</script>
+  <script src="/static/game.js"></script>
+  <div style="display:none;"><img src="static/img/anabasis_image1.png"></div>
+</body>
+</html>

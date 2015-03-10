@@ -1,0 +1,28 @@
+td {
+  border: 1px dotted rgba(255,255,255,0);
+  padding: 11px; /* size to modify, k=length of side of the square. padding = (611 - (k+1)) / (2*k) */
+}
+
+#minimap-background {
+  position: relative;
+  left: 0px;
+  top: 20px;
+  z-index: 1;
+}
+
+#minimap-my_position {
+  position: relative;
+  left:-25px;
+  top: -128px;
+  z-index: 2;
+}
+
+#minimap_background_img {
+  width:54px; 
+  height:54px;
+}
+
+#minimap_position_img {
+  width:2px; 
+  height:2px;
+}
