@@ -711,6 +711,7 @@ io.sockets.on('connection', function (socket) { // each socket is linked to a pl
       socket.pass = passIndex*socket.table + socket.cell;
 
       bad_attempts_test();
+      socket.ban_gauge -= 2;
 
       if(socket.ban == true) { // ignore him!
       }
