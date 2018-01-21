@@ -60,3 +60,8 @@ Some technical informations:
     * db.nicknames.remove()
     * db.passes.remove()
     * db.bans.remove()
+
+* The game can also be launched with side of 26 instead of 10. Proceed as follows:
+  * change env variable SIDE to 26 (used in app.js)
+  * Use index26.html instead of index.html
+  * Use draws26.html instead of draws.html
