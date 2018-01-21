@@ -1,6 +1,6 @@
 # Anabasis
 
-Anabasis is a collaborative webapp game where players draw pictures and try to find one special cell among ten thousand.
+**Anabasis** is a collaborative webapp game where players draw pictures and try to find one special cell among ten thousand.
 
 *Artistic aim.* The main goal is to draw monochrome pixel pictures. Express yourself and draw letters, signs or geometric forms... Play alone or with friends: every player contributes at the same time on the same drawing!
 
@@ -16,7 +16,7 @@ The app has been released at this address: <a href="https://anabasis.herokuapp.c
 
 It is a side project, interrogating myself on where people would prefer to click in such an area. This project uses node.js and mongodb. I deployed the app with <a href="https://www.heroku.com" target="_blank">Heroku</a> and <a href="https://mlab.com" target="_blank">MongoLab</a>. You can check out the <a href="https://ahstat.github.io/Anabasis/" target="_blank">related post on my blog here</a>.
 
-The following image is a drawing obtained with this app, finished on 2 Apr 2015 and called "FINALLY". You can see all drawings by clicking the image [NSFW, some users having a propensity to draw weird stuff].
+The following image is a drawing obtained with Anabasis, finished on 2 Apr 2015 and called "FINALLY". You can see all drawings by clicking the image [NSFW, some users having a propensity to draw weird stuff].
 <p align="center">
   <a href="https://anabasis.herokuapp.com/draws.html" target="_blank"><img src="static/img/image29.png" alt="an image drew with Anabasis"/></a>
 </p>
